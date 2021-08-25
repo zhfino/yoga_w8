@@ -1,61 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-md navbar-light bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img
+            src="https://raw.githubusercontent.com/zhfino/yoga_w8/main/app/assets/images/DOYOGA-logo.png"
+            alt="logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav position-md-absolute top-md-50 start-md-50 translate-md-middle ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">課程介紹</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" href="#">瑜珈空間</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#">當月課表</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        </div>
+        <div class="header_btn  d-none d-md-block">
+          <button type="button" class="btn btn-outline-dark">立即預約</button>
+          <button type="button" class="btn btn-outline-dark">聯絡我們</button>
         </div>
       </div>
     </nav>
+  </header>
 
-    <%- contents %>
+  <%- contents %>
 
-    <footer class="footer">
-      footer
-    </footer>
+  <footer class="footer bg-dark ">
+    <div class="sub border-bottom">
+      <div class="container">
+        <div class="row pt-5 pb-4">
+          <div class="col-md-8 pb-2">
+            <p class="textL text-white">現在訂閱，獲得課程優惠碼！</p>
+          </div>
+          <div class="col-md-4">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="請輸入您的電子信箱">
+              <button type="button" class="btn btn-secondary">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="endBar">
+      <div class="container pb-5">
+        <div class="barImg d-flex justify-content-between pb-2 pt-5">
+          <a href=""><img src="https://raw.githubusercontent.com/zhfino/yoga_w8/main/app/assets/images/DOYOGA.png"
+              alt="" class="logo"></a>
+          <ul class="list-unstyled d-flex">
+            <li><a href=""><img src="" alt="">FB</a></li>
+            <li><a href=""><img src="" alt="">IG</a></li>
+            <li><a href=""><img src="" alt="">LINE</a></li>
+          </ul>
+        </div>
+        <div class="barList position-relative">
+          <ul class="list-unstyled">
+            <li><a href="" class="text-white  pb-2">課程介紹</a></li>
+            <li><a href="" class="text-white  pb-2">瑜珈空間</a></li>
+            <li><a href="" class="text-white">當月課表</a></li>
+          </ul>
+          <p class="text-white position-md-absolute bottom-md-0 start-md-50 translate-middle-md-x ">© 2021. All Rights Reserved.</p>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
 
 </html>

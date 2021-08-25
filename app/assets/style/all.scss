@@ -2,5 +2,8 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-
-@import './layout/index.scss'
+@import "./helpers/_utility.scss";
+@import "./helpers/_base.scss";
+@import './layout/_header.scss';
+@import './layout/_footer.scss';
+@import './layout/index.scss';
