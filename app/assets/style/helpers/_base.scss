@@ -1,3 +1,9 @@
+@mixin sm {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
 body {
     font: size 16px;
     line-height: 1.5;
@@ -15,6 +21,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 a {
     text-decoration: none;
     color: $light;
@@ -26,7 +33,44 @@ a {
     box-sizing: border-box;
 }
 
-ul,li,p{
+ul,
+li,
+p,
+h1,
+h2,
+h3 {
     margin: 0;
     padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+// @mixin pad {
+//     @media (max-width: 992px) {
+//       @content;
+//     }
+//   }
+
+
+
+h1 {
+    font-size: 36px;
+    line-height: 1.5;
+
+    @include sm {
+        font-size: 28px;
+    }
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 1.5;
+    color: $dark;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: $secondary;
 }
