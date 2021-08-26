@@ -114,7 +114,8 @@
   background-size: cover;
   height: 444px;
   border-radius: 16px;
-  @include sm{
+
+  @include sm {
     height: 210px;
   }
 }
@@ -127,7 +128,8 @@
   height: 207px;
   border-radius: 16px;
   margin-bottom: 30px;
-  @include sm{
+
+  @include sm {
     height: 210px;
   }
 }
@@ -139,54 +141,103 @@
   background-size: cover;
   height: 207px;
   border-radius: 16px;
-  @include sm{
+
+  @include sm {
     display: none;
   }
 }
 
-.environment h2{
+.environment h2 {
   padding-top: 145px;
+
   @include sm {
     padding-top: 0px;
   }
 }
 
 
-.swiper-container {
-  /* 設定幻燈片寬度跟高度 */
-  width: 320px;
-  height: 200px;
+// -------------------
+
+.lesImg{
+ width: 445px;
+ height: 445px;
+ border-radius: 16px;
 }
 
 
-.swiper {
-  width: 100%;
-  height: 100%;
+// -------------------
+
+
+
+
+
+
+
+.planCard {
+  height: 497px;
+  border-radius: 16px;
+  border: 1px solid $secondary;
+}
+
+.planCard .firstTime {
+  background: url('https://raw.githubusercontent.com/zhfino/yoga_w8/main/app/assets/images/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  border-radius: 16px 16px 0 0;
+}
+
+.planCard .shortTime {
+  background: url('https://raw.githubusercontent.com/zhfino/yoga_w8/main/app/assets/images/woman%20performing%20yoga.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  border-radius: 16px 16px 0 0;
+}
+
+.planCard .longTime {
+  background: url('https://raw.githubusercontent.com/zhfino/yoga_w8/main/app/assets/images/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  border-radius: 16px 16px 0 0;
+}
+
+.planBtn {
+  width: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.myRecSwiper {
+  height: 300px;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  height: auto;
+  width: auto;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.recBox {
+  height: 116px;
+  width: 350px;
+  background: white;
+  border-radius: 16px;
+
+  img {
+    height: 60px;
+  }
 }
