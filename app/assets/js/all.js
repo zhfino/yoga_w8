@@ -1,21 +1,5 @@
-$(function() {
+$(function () {
   console.log('Hello Bootstrap5');
-});
-
-var swiper = new Swiper(".myRecSwiper", {
-  slidesPerView: 3,
-  grid: {
-    rows: 2,
-  },
-    autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  spaceBetween: 16,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 });
 
 
@@ -28,3 +12,41 @@ var swiper = new Swiper(".myLesSwiper", {
     clickable: true,
   },
 });
+
+
+var swiper = new Swiper(".myRecSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 8,
+  grid: {
+    rows: 3,
+  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2.1,
+      spaceBetween: 30,
+      grid: {
+        rows: 2,
+      },
+
+    },
+
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      grid: {
+        rows: 2,
+      },
+      
+    },
+  }
+});
+

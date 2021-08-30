@@ -2,6 +2,10 @@
     font-size: 14px;
 }
 
+.textD {
+    font-size: 16px;
+}
+
 .textS {
     font-size: 20px;
 }
@@ -25,9 +29,17 @@
 
 
 
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+    .textD-sm {
+        font-size: 16px;
+    }
+}
 
 @include media-breakpoint-up(md) {
+
+    .textL-md {
+        font-size: 28px;
+    }
     .position-md-absolute {
         position: absolute !important;
     }
@@ -55,7 +67,34 @@
     }
 }
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+
+    .position-lg-absolute {
+        position: absolute !important;
+    }
+
+    .top-lg-50 {
+        top: 50% !important;
+    }
+
+    .start-lg-50 {
+        left: 50% !important;
+    }
+
+    .bottom-lg-0 {
+        bottom: 0 !important;
+    }
+
+    .translate-lg-middle {
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .translate-middle-lg-x {
+        -webkit-transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+        transform: translateX(-50%) !important;
+    }
+}
 
 @include media-breakpoint-up(xl) {}
 
