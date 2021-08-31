@@ -1,3 +1,19 @@
+
+//--浮動視窗
+
+.floatMenu{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    img{
+        height: 48px;
+        width: 48px;
+    }
+}
+
+
+
+//--字體
 .textXS {
     font-size: 14px;
 }
@@ -23,7 +39,7 @@
     font-size: 28px;
 }
 
-
+//--修改輸入框預設字體顏色
 ::placeholder {
     /* CSS 3 標準 */
     color: $dark !important;
@@ -58,7 +74,7 @@
 }
 
 
-
+//--新增自適應套件
 
 @include media-breakpoint-up(sm) {
     .textD-sm {
