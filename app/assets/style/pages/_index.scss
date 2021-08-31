@@ -28,6 +28,9 @@
     height: 252px;
   }
 
+  @include sm {
+    height: 420px;
+  }
 }
 
 .relax {
@@ -42,6 +45,10 @@
     margin-bottom: 16px;
     height: 252px;
   }
+
+  @include sm {
+    height: 420px;
+  }
 }
 
 .sculpt {
@@ -55,6 +62,10 @@
   @include md {
     margin-bottom: 16px;
     height: 252px;
+  }
+
+  @include sm {
+    height: 420px;
   }
 }
 
@@ -86,7 +97,7 @@
   }
 
   @include md {
-    margin-left: 0;
+    margin-left: -95px;
   }
 
   @include sm {
@@ -216,7 +227,7 @@
   border-radius: 16px;
 
   @include sm {
-    height: 246px;
+    height: 165px;
   }
 }
 
@@ -231,7 +242,7 @@
   border-radius: 16px;
 
   @include sm {
-    height: 246px;
+    height: 165px;
   }
 }
 
@@ -244,7 +255,7 @@
   border-radius: 16px;
 
   @include sm {
-    height: 246px;
+    height: 165px;
   }
 }
 
@@ -257,7 +268,7 @@
   border-radius: 16px;
 
   @include sm {
-    height: 246px;
+    height: 165px;
   }
 }
 
@@ -369,15 +380,19 @@
 
 .myRecSwiper {
   height: 300px;
-  @include sm{
-    height: 364px;
+
+  @include sm {
+    height: 410px;
   }
 }
 
 .swiper-slide {
   height: auto;
   width: auto;
+
 }
+
+
 
 .recBox {
   height: 116px;
@@ -390,10 +405,31 @@
   }
 }
 
-.swiper-button-prev { 
-  background-image: url("") !important; 
-} 
+.swiper-button-prev {
+  background-image: url("../images/PgUp.svg") !important;
+  width: 50px;
+  background-repeat: no-repeat;
+  fill: $dark;
 
-.swiper-button-next { 
-  background-image: url("") !important; 
-} 
+  &::after {
+    color: transparent;
+  }
+
+}
+
+.swiper-button-next {
+  background-image: url("../images/PgDn.svg") !important;
+  width: 50px;
+  background-repeat: no-repeat;
+
+  &::after {
+    color: transparent;
+  }
+}
+
+.pgUp,
+.pgDn {
+
+  top: 95% !important;
+
+}

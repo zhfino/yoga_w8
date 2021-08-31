@@ -24,7 +24,38 @@
 }
 
 
+::placeholder {
+    /* CSS 3 標準 */
+    color: $dark !important;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
 
+::-webkit-input-placeholder {
+    /* Chrome, Safari */
+    color: $dark !important;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: $dark !important;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $dark !important;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    opacity: 1;
+}
 
 
 
@@ -40,6 +71,7 @@
     .textL-md {
         font-size: 28px;
     }
+
     .position-md-absolute {
         position: absolute !important;
     }
