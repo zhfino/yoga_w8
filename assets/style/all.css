@@ -13067,6 +13067,17 @@ h3, .h3 {
   color: #C0A4A5;
 }
 
+.floatMenu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+}
+
+.floatMenu img {
+  height: 48px;
+  width: 48px;
+}
+
 .textXS {
   font-size: 14px;
 }
