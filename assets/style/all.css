@@ -13097,7 +13097,6 @@ h3, .h3 {
   color: #907A7B !important;
   font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 ::-moz-placeholder {
@@ -13105,7 +13104,6 @@ h3, .h3 {
   color: #907A7B !important;
   font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 :-ms-input-placeholder {
@@ -13113,7 +13111,6 @@ h3, .h3 {
   color: #907A7B !important;
   font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 ::-ms-input-placeholder {
@@ -13121,7 +13118,6 @@ h3, .h3 {
   color: #907A7B !important;
   font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 ::placeholder {
@@ -13129,7 +13125,6 @@ h3, .h3 {
   color: #907A7B !important;
   font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 ::-webkit-input-placeholder {
@@ -13137,7 +13132,6 @@ h3, .h3 {
   color: #907A7B !important;
   font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 :-ms-input-placeholder {
@@ -13145,7 +13139,6 @@ h3, .h3 {
   color: #907A7B !important;
   font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 ::-moz-placeholder {
@@ -13153,7 +13146,6 @@ h3, .h3 {
   color: #907A7B !important;
   font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
   opacity: 1;
 }
 
