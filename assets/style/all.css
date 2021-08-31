@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -13006,7 +13007,6 @@ body {
 }
 
 .container {
-  max-width: 1100px;
   margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -13033,8 +13033,11 @@ a {
 ul,
 li,
 p, h1, .h1, h2, .h2, h3, .h3 {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 
 ul {
@@ -13068,6 +13071,10 @@ h3, .h3 {
   font-size: 14px;
 }
 
+.textD {
+  font-size: 16px;
+}
+
 .textS {
   font-size: 20px;
 }
@@ -13085,7 +13092,81 @@ h3, .h3 {
   font-size: 28px;
 }
 
+::-webkit-input-placeholder {
+  /* CSS 3 標準 */
+  color: #907A7B !important;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+::-moz-placeholder {
+  /* CSS 3 標準 */
+  color: #907A7B !important;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+:-ms-input-placeholder {
+  /* CSS 3 標準 */
+  color: #907A7B !important;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+::-ms-input-placeholder {
+  /* CSS 3 標準 */
+  color: #907A7B !important;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+::placeholder {
+  /* CSS 3 標準 */
+  color: #907A7B !important;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Safari */
+  color: #907A7B !important;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #907A7B !important;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #907A7B !important;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+@media (min-width: 576px) {
+  .textD-sm {
+    font-size: 16px;
+  }
+}
+
 @media (min-width: 768px) {
+  .textL-md {
+    font-size: 28px;
+  }
   .position-md-absolute {
     position: absolute !important;
   }
@@ -13104,6 +13185,31 @@ h3, .h3 {
             transform: translate(-50%, -50%) !important;
   }
   .translate-middle-md-x {
+    -webkit-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .position-lg-absolute {
+    position: absolute !important;
+  }
+  .top-lg-50 {
+    top: 50% !important;
+  }
+  .start-lg-50 {
+    left: 50% !important;
+  }
+  .bottom-lg-0 {
+    bottom: 0 !important;
+  }
+  .translate-lg-middle {
+    -webkit-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+  }
+  .translate-middle-lg-x {
     -webkit-transform: translateX(-50%) !important;
     -ms-transform: translateX(-50%) !important;
     transform: translateX(-50%) !important;
@@ -13149,9 +13255,16 @@ h3, .h3 {
   border-radius: 16px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .fitness {
     margin-bottom: 16px;
+    height: 252px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fitness {
+    height: 420px;
   }
 }
 
@@ -13164,9 +13277,16 @@ h3, .h3 {
   border-radius: 16px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .relax {
     margin-bottom: 16px;
+    height: 252px;
+  }
+}
+
+@media (max-width: 767px) {
+  .relax {
+    height: 420px;
   }
 }
 
@@ -13179,9 +13299,16 @@ h3, .h3 {
   border-radius: 16px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .sculpt {
     margin-bottom: 16px;
+    height: 252px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sculpt {
+    height: 420px;
   }
 }
 
@@ -13194,7 +13321,7 @@ h3, .h3 {
   border-radius: 16px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .teachers .bgImg {
     display: none;
   }
@@ -13210,6 +13337,12 @@ h3, .h3 {
 
 .teacherCardTop img {
   height: 94px;
+}
+
+@media (max-width: 992px) {
+  .teacherCardTop {
+    margin-left: -95px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -13233,7 +13366,7 @@ h3, .h3 {
   height: 68px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .teacherCard {
     height: 90px;
   }
@@ -13249,6 +13382,12 @@ h3, .h3 {
   background-size: cover;
   height: 444px;
   border-radius: 16px;
+}
+
+@media (max-width: 992px) {
+  .bgImg .first {
+    height: 266px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -13267,6 +13406,12 @@ h3, .h3 {
   margin-bottom: 30px;
 }
 
+@media (max-width: 992px) {
+  .bgImg .second {
+    height: 117px;
+  }
+}
+
 @media (max-width: 767px) {
   .bgImg .second {
     height: 210px;
@@ -13282,6 +13427,12 @@ h3, .h3 {
   border-radius: 16px;
 }
 
+@media (max-width: 992px) {
+  .bgImg .third {
+    height: 117px;
+  }
+}
+
 @media (max-width: 767px) {
   .bgImg .third {
     display: none;
@@ -13292,8 +13443,24 @@ h3, .h3 {
   padding-top: 145px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .environment h2, .environment .h2 {
+    padding-top: 48px;
+  }
+}
+
+.lesson h2, .lesson .h2 {
+  padding-top: 145px;
+}
+
+@media (max-width: 992px) {
+  .lesson h2, .lesson .h2 {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lesson h2, .lesson .h2 {
     padding-top: 0px;
   }
 }
@@ -13304,10 +13471,94 @@ h3, .h3 {
   border-radius: 16px;
 }
 
+.bgImgBox {
+  height: 100%;
+}
+
+.StartTop {
+  background: url("https://raw.githubusercontent.com/zhfino/yoga_w8/main/app/assets/images/woman%20doing%20yoga%20beside%20wall.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 150px;
+  border-radius: 16px;
+}
+
+@media (max-width: 767px) {
+  .StartTop {
+    height: 165px;
+  }
+}
+
+.EndTop {
+  background: url("https://raw.githubusercontent.com/zhfino/yoga_w8/main/app/assets/images/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 150px;
+  border-radius: 16px;
+}
+
+@media (max-width: 767px) {
+  .EndTop {
+    height: 165px;
+  }
+}
+
+.StartBot {
+  background: url("https://raw.githubusercontent.com/zhfino/yoga_w8/main/app/assets/images/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 150px;
+  border-radius: 16px;
+}
+
+@media (max-width: 767px) {
+  .StartBot {
+    height: 165px;
+  }
+}
+
+.EndBot {
+  background: url("https://raw.githubusercontent.com/zhfino/yoga_w8/main/app/assets/images/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  border-radius: 16px;
+}
+
+@media (max-width: 767px) {
+  .EndBot {
+    height: 165px;
+  }
+}
+
 .planCard {
   height: 497px;
   border-radius: 16px;
   border: 1px solid #C0A4A5;
+}
+
+@media (max-width: 992px) {
+  .planCard {
+    height: 238px;
+  }
+}
+
+@media (max-width: 767px) {
+  .planCard {
+    height: 497px;
+  }
+}
+
+.planBox {
+  width: 85%;
+}
+
+.planBtn {
+  width: 100%;
 }
 
 .planCard .firstTime {
@@ -13319,6 +13570,22 @@ h3, .h3 {
   border-radius: 16px 16px 0 0;
 }
 
+@media (max-width: 992px) {
+  .planCard .firstTime {
+    width: 345px;
+    height: 238px;
+    border-radius: 16px 0 0 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .planCard .firstTime {
+    width: 100%;
+    height: 250px;
+    border-radius: 16px 16px 0 0;
+  }
+}
+
 .planCard .shortTime {
   background: url("https://raw.githubusercontent.com/zhfino/yoga_w8/main/app/assets/images/woman%20performing%20yoga.jpg");
   background-repeat: no-repeat;
@@ -13326,6 +13593,22 @@ h3, .h3 {
   background-size: cover;
   height: 250px;
   border-radius: 16px 16px 0 0;
+}
+
+@media (max-width: 992px) {
+  .planCard .shortTime {
+    width: 345px;
+    height: 238px;
+    border-radius: 16px 0 0 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .planCard .shortTime {
+    width: 100%;
+    height: 250px;
+    border-radius: 16px 16px 0 0;
+  }
 }
 
 .planCard .longTime {
@@ -13337,12 +13620,30 @@ h3, .h3 {
   border-radius: 16px 16px 0 0;
 }
 
-.planBtn {
-  width: 85%;
+@media (max-width: 992px) {
+  .planCard .longTime {
+    width: 345px;
+    height: 238px;
+    border-radius: 16px 0 0 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .planCard .longTime {
+    width: 100%;
+    height: 250px;
+    border-radius: 16px 16px 0 0;
+  }
 }
 
 .myRecSwiper {
   height: 300px;
+}
+
+@media (max-width: 767px) {
+  .myRecSwiper {
+    height: 410px;
+  }
 }
 
 .swiper-slide {
@@ -13352,13 +13653,39 @@ h3, .h3 {
 
 .recBox {
   height: 116px;
-  width: 350px;
+  width: 100%;
   background: white;
   border-radius: 16px;
 }
 
 .recBox img {
   height: 60px;
+}
+
+.swiper-button-prev {
+  background-image: url("../images/PgUp.svg") !important;
+  width: 50px;
+  background-repeat: no-repeat;
+  fill: #907A7B;
+}
+
+.swiper-button-prev::after {
+  color: transparent;
+}
+
+.swiper-button-next {
+  background-image: url("../images/PgDn.svg") !important;
+  width: 50px;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-next::after {
+  color: transparent;
+}
+
+.pgUp,
+.pgDn {
+  top: 95% !important;
 }
 
 /*# sourceMappingURL=all.css.map */
