@@ -1,0 +1,17 @@
+.stateBox{
+    height: 48px;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.bookingNotification{
+    width: 445px;
+    padding-bottom: 104px;
+    @include md{
+        padding-bottom: 80px;
+    }
+    @include sm{
+        width: auto;
+        padding-bottom: 88px;
+    }
+}
