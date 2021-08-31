@@ -13691,4 +13691,28 @@ h3, .h3 {
   top: 95% !important;
 }
 
+.stateBox {
+  height: 48px;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.bookingNotification {
+  width: 445px;
+  padding-bottom: 104px;
+}
+
+@media (max-width: 992px) {
+  .bookingNotification {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bookingNotification {
+    width: auto;
+    padding-bottom: 88px;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
