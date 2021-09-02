@@ -13079,6 +13079,14 @@ h3, .h3 {
   width: 48px;
 }
 
+.form-check-input:checked {
+  background: #C0A4A5;
+}
+
+.formEndBtn {
+  width: 100%;
+}
+
 .textXS {
   font-size: 14px;
 }
@@ -13107,58 +13115,41 @@ h3, .h3 {
 ::-webkit-input-placeholder {
   /* CSS 3 標準 */
   color: #907A7B !important;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 ::-moz-placeholder {
   /* CSS 3 標準 */
   color: #907A7B !important;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 :-ms-input-placeholder {
   /* CSS 3 標準 */
   color: #907A7B !important;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 ::-ms-input-placeholder {
   /* CSS 3 標準 */
   color: #907A7B !important;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 ::placeholder {
   /* CSS 3 標準 */
   color: #907A7B !important;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 ::-webkit-input-placeholder {
   /* Chrome, Safari */
   color: #907A7B !important;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 :-ms-input-placeholder {
   /* IE 10+ */
   color: #907A7B !important;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #907A7B !important;
-  font-size: 20px;
-  line-height: 30px;
-  opacity: 1;
 }
 
 @media (min-width: 576px) {
@@ -13230,6 +13221,55 @@ h3, .h3 {
 
 .footerIcion {
   height: 24px;
+}
+
+.footer ::-webkit-input-placeholder {
+  /* CSS 3 標準 */
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer ::-moz-placeholder {
+  /* CSS 3 標準 */
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer :-ms-input-placeholder {
+  /* CSS 3 標準 */
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer ::-ms-input-placeholder {
+  /* CSS 3 標準 */
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer ::placeholder {
+  /* CSS 3 標準 */
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer ::-webkit-input-placeholder {
+  /* Chrome, Safari */
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer :-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 20px;
+  line-height: 30px;
+  opacity: 1;
 }
 
 .banner {

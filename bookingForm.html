@@ -8,8 +8,11 @@
   <title>Boostrap Index</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />       
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -56,13 +59,13 @@
         <h2 class="text-center pt-7 pt-md-9 ">立即預約</h2>
         <div class="row stateSite pt-4 pt-md-3">
             <div class="col-md-2 offset-md-3 col-4">
-                <button type="button" class="btn btn-primary text-dark stateBox " disabled>選擇方案</button>
+                <div class="stateBox bg-primary text-dark d-flex justify-content-center align-items-center">選擇方案</div>
             </div>
             <div class="col-md-2 col-4">
-                <button type="button" class="btn btn-dark text-white stateBox" disabled>填寫資料</button>
+                <div class="stateBox bg-dark text-white d-flex justify-content-center align-items-center">填寫資料</div>
             </div>
             <div class="col-md-2 col-4">
-                <button type="button" class="btn btn-primary text-dark stateBox " disabled>完成預約</button>
+                <div class="stateBox bg-primary text-dark d-flex justify-content-center align-items-center">完成預約</div>
             </div>
         </div>
     </div>
@@ -70,14 +73,157 @@
 
 <section class="bookingForm">
     <div class="container">
-        <div class="userChoose d-flex">
-            <p>您選擇的是</p>
-            <p>首次體驗課程-基礎</p>
+        <div class="userChoose d-flex justify-content-center align-items-center pt-5 pb-4 pb-lg-5">
+            <p class="text-light pe-3">您選擇的是</p>
+            <p class="text-secondary textS">首次體驗課程-基礎</p>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-3">
-                <form action="">
-            AA
+            <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                <form action="" class="text-light pb-4 pb-md-3 pb-lg-6">
+                    <!-- 問題1 -->
+                    <div class="formQues pb-5">
+                        <label for="yogaExp" class="pb-3">1. 是否接觸過瑜珈?</label>
+                        <div class="formAns d-flex">
+                            <div class="form-check pe-7">
+                                <input class="form-check-input" type="radio" name="yogaExp" id="Y_yogaExp" checked>
+                                <label class="form-check-label" for="Y_yogaExp">
+                                    是
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="yogaExp" id="N_yogaExp">
+                                <label class="form-check-label" for="N_yogaExp">
+                                    否
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 問題2 -->
+                    <div class="formQues pb-5">
+                        <label for="problemImprove" class="pb-3">2. 想改善的生活問題?</label>
+                        <div class="d-flex">
+                            <div class="formAns me-3 me-md-2">
+                                <div class="form-check pb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="endurance">
+                                    <label class="form-check-label" for="endurance">
+                                        肌耐力不足
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="posture">
+                                    <label class="form-check-label" for="posture">
+                                        姿勢不正
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="formAns me-3 me-md-2">
+                                <div class="form-check pb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="softness">
+                                    <label class="form-check-label" for="softness">
+                                        柔軟度不佳
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleepQuality">
+                                    <label class="form-check-label" for="sleepQuality">
+                                        睡眠品質差
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="formAns">
+                                <div class="form-check pb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="pressure">
+                                    <label class="form-check-label" for="pressure">
+                                        壓力大
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="attention">
+                                    <label class="form-check-label" for="attention">
+                                        注意力不足
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 問題3 -->
+                    <div class="formQues pb-5">
+                        <label for="AmountOfExercise" class="pb-3">3. 每週累積運動量約為多少？</label>
+                        <div class="d-flex">
+                            <div class="formAns pe-7">
+                                <div class="form-check pb-3 pb-md-1">
+                                    <input class="form-check-input" type="radio" name="AmountOfExercise" id="150minsUp"
+                                        checked>
+                                    <label class="form-check-label" for="150minsUp">
+                                        150 分鐘以上
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="AmountOfExercise" id="30-75mins">
+                                    <label class="form-check-label" for="30-75mins">
+                                        30~75 分鐘
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="formAns pe-7">
+                                <div class="form-check pb-3 pb-md-1">
+                                    <input class="form-check-input" type="radio" name="AmountOfExercise"
+                                        id="75-150mins">
+                                    <label class="form-check-label" for="75-150mins">
+                                        75~150 分鐘
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="AmountOfExercise" id="30minsDn">
+                                    <label class="form-check-label" for="30minsDn">
+                                        30 分鐘以下
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 問題4 -->
+                    <div class="formQues pb-5">
+                        <label for="checkInDate" class="pb-1">4. 上課預約報到日</label>
+                        <p class="pb-2">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
+                        <label>
+                            <input type="text" class="form-control" id="checkInDate" placeholder="MM/DD/YYYY" pattern="\d{1,2}/\d{1,2}/\d{4}">
+                        </label>
+                    </div>
+
+                    <!-- 問題5 -->
+                    <div class="formQues pb-5">
+                        <label for="userInfo" class="pb-3">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</label>
+                        <div class="d-flex justify-content-between pb-3">
+                            <div class="formAns">
+                                <label for="userName" class="">姓名
+                                    <input type="text" class="form-control mt-2" id="userName" placeholder="請輸入您的姓名">
+                                </label>
+                            </div>
+                            <div class="formAns">
+                                <label for="userAge" class="ms-2">年齡
+                                    <input type="number" class="form-control mt-2" id="userAge" placeholder="請輸入您的年齡">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="formAns pb-3">
+                            <label for="userGender" class="">性別
+                                <select class="form-select mt-2" aria-label="userGender">
+                                    <option value="0" selected>女</option>
+                                    <option value="1">男</option>
+                                </select>
+                        </div>
+                        <div class="formAns pb-3">
+                            <label for="userEmail" class="pb-2">電子信箱</label>
+                            <input type="email" class="form-control" id="userAge" placeholder="email@example.com">
+                        </div>
+                        <div class="formAns">
+                            <label for="userPhone" class="pb-2">手機號碼</label>
+                            <input type="tel" class="form-control" id="userAge" placeholder="0912-345-678"
+                                pattern="\d{10}">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary formEndBtn text-white mb-9">送出</button>
                 </form>
             </div>
         </div>
@@ -127,6 +273,8 @@
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>  
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>   
   <script src="./assets/js/all.js"></script>
 </body>
 
