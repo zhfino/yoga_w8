@@ -202,7 +202,8 @@
                             </div>
                             <div class="formAns">
                                 <label for="userAge" class="ms-2">年齡
-                                    <input type="number" class="form-control mt-2" id="userAge" placeholder="請輸入您的年齡">
+                                    <input type="text" class="form-control mt-2" id="userAge" placeholder="請輸入您的年齡" maxlength="2" pattern="\d*" >
+                                    <!-- min="18" max="99"> -->
                                 </label>
                             </div>
                         </div>
@@ -219,8 +220,7 @@
                         </div>
                         <div class="formAns">
                             <label for="userPhone" class="pb-2">手機號碼</label>
-                            <input type="tel" class="form-control" id="userAge" placeholder="0912-345-678"
-                                pattern="\d{10}">
+                            <input type="tel" class="form-control" id="userAge" placeholder="0912-345-678" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
                         </div>
                     </div>
                     <button type="button" class="btn btn-secondary formEndBtn text-white mb-9">送出</button>
