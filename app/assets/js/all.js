@@ -47,3 +47,7 @@ var swiper = new Swiper(".myRecSwiper", {
   }
 });
 
+
+$(function () {
+  $("#checkInDate").datepicker();
+});

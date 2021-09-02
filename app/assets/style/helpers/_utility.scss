@@ -12,6 +12,13 @@
     }
 }
 
+//--表單按鈕顏色
+.form-check-input:checked{
+    background: $secondary;
+}
+.formEndBtn{
+    width: 100%;
+}
 
 
 //--字體
@@ -44,36 +51,22 @@
 ::placeholder {
     /* CSS 3 標準 */
     color: $dark !important;
-    font-size: 20px;
-    line-height: 30px;
-
 }
 
 ::-webkit-input-placeholder {
     /* Chrome, Safari */
     color: $dark !important;
-    font-size: 20px;
-    line-height: 30px;
-
 }
 
 :-ms-input-placeholder {
     /* IE 10+ */
     color: $dark !important;
-    font-size: 20px;
-    line-height: 30px;
-
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
     color: $dark !important;
-    font-size: 20px;
-    line-height: 30px;
-
-    opacity: 1;
 }
-
 
 //--新增自適應套件
 
